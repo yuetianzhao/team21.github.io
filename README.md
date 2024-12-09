@@ -56,51 +56,45 @@ One of the key challenges is the microphone's initial inaccuracy in detecting an
 Another significant challenge is managing the conflict between the UART communication protocol and Timer1, which controls the motor rotation. Both functionalities are critical, but their simultaneous operation can lead to timing issues and resource contention. Resolving this conflict requires efficient scheduling or alternative methods, such as interrupt-driven mechanisms or prioritization strategies, to ensure seamless motor control without disrupting data communication.
 
 
-## 3. Hardware & Software Requirements
+## 3. Hardware Requirements
 
 ### Hardware Requirements
 
-#### HRS 01 - SAMW25 Microcontroller
-Our project is based on a self-designed PCB. The MCU of this PCB is the SAMW25 microcontroller, with J-link used to flash the code into the PCB.
+#### HRS 01 - STM32 Microcontroller
+Our project is based on evaluation board. The MCU STM32 microcontroller, with ST-link used to flash the code into the Board.
 
-#### HRS 02 - SHTC3-TR-10KS Sensor
-In compliance with HRS 02, our system employs the SHTC3-TR-10KS sensor, which detects a wide range of temperature (-40 °C to 125 °C) and humidity (0 to 100 %RH). The typical accuracy is ±2 %RH for humidity and ±0.2°C for temperature, but our software configuration displays accuracy to ±1°C for temperature and ±1 %RH for humidity due to integer data type limitations.
+#### HRS 02 - MAX4466 Microphone Sensor
+In compliance with HRS 02, our system employs the MAX4466 module microphone sensor, which detects a wide range of sound and amplify it, when no sound, the system should show 2048 value for our 12-bit ADC. The typical accuracy is ±5 % for offset situation and with high volume, the ADC value should reaches 3000, for low volume, ADC should reaches 2500.
 
 #### HRS 03 - 1.8" Color TFT LCD with SPI Interface
-The implementation of the 1.8" Color TFT LCD with an SPI interface in our project was crucial for displaying detailed product information. This LCD module communicates with the microcontroller through the SPI, ensuring swift and stable data updates.
+The implementation of the 1.8" Color TFT LCD with an SPI interface in our project was crucial for displaying detailed sound information. This LCD module communicates with the microcontroller through the SPI, ensuring swift and stable data updates.
 
-#### HRS 04 - Tiny Code Reader from Useful Sensors
-The Tiny Code Reader captures and interprets QR codes effectively, with an LED indicator that signals the scanning process status. It communicates with the microcontroller via I2C, changing from blue to green upon a successful scan.
+#### HRS 04 - RC Servo motors
+The RC servo motors should rotate according to the postion of the sound, and it can rotate from 0 to 270 Degrees, it should follow the sound with accuracy that it should point to the sound that less than 20 degree.
 
-#### HRS 05 - ADA1201 Vibrating Motor
-The ADA1201 vibrating motor is integrated as a tactile feedback mechanism. It sends a vibration alert each time an item is scanned and when the user finishes shopping, enhancing the user experience with immediate physical feedback.
+#### HRS 05 - System Integration and Control
+Our development team has implemented a system that use three evaluation board(2 ATMEGA328PB and 1 STM32), we use USB as power supply which enable the system work correctly.
 
-#### HRS 06 - System Integration and Control
-Our development team has implemented a system that integrates multiple hardware components to ensure smooth and efficient operation. The device operates on a 3.7V Li-Ion battery, with a tested continuous operational capability of at least 3 hours.
+## 4. Software Requirements
 
-### Software Requirements
-
-#### SRS 01 - QR Code Scanning and Processing
-The Adafruit 5744 QR code reader scans QR codes on products with a response time of less than 2 seconds per scan. While the I2C protocol speed is assumed to be efficient, we lack tools to measure the exact speed, focusing on the operational performance.
+#### SRS 01 - ADCs and DMA for FFT
+The ADCs should set in continuous mode, and let the A/D transition less than 50us per data and then transmit to array by DMA, by doing this, it can have enough 256 bytes data for FFT and also to improve accuracy. 
 
 #### SRS 02 - Display Management
-We manage a 1.8" Color TFT LCD screen with an SPI interface, capable of displaying product details. Current performance shows a refresh time of approximately one to two seconds, slower than the desired 500 milliseconds.
+We manage a 1.8" Color TFT LCD screen with an SPI interface, capable of displaying sound details. Current performance shows 5 different frequency component of the sound and show the position of the sound, the data to SPI is 9600 BPS.
 
-#### SRS 03 - Temperature and Humidity Monitoring
-The software interfaces with the SHTC3-TR-10KS sensor, collecting and transmitting temperature and humidity data every 5 seconds via MQTT to Node-RED for real-time monitoring and analysis.
-
-#### SRS 04 - Wireless Data Transmission
-Using the SAMW25 Wi-Fi microcontroller, our system handles data transmission over a 2.4 GHz Wi-Fi network, supporting 802.11 b/g/n standards with a minimum data transfer rate of 150 Mbps. It seamlessly connects to various networks and interfaces with different server configurations.
-
-#### SRS 05 - User Interaction and Feedback
-The ADA1201 vibrating motor is controlled by software to activate for 0.5 seconds for scan confirmations and alerts, with a slight delay in the vibration timing due to code issues but still delivering timely feedback.
-
-
-## 4. Project Photos & Screenshots
+#### SRS 03 - UART and GPIO data transmition
+Our system need to transmit data from STM32 to ATMEGA328PB, we use two communication approach, UART with 9600 baud rate and GPIO that will set high for 60ms when detect the postion sound information(left, front, right).
 
 
 
-## 5. Project Codebase Links
-- **Node-RED instance:** [http://52.177.130.52:1880/ui](http://52.177.130.52:1880/ui)
-- **A12G Code Repository:** [GitHub Repository](https://github.com/ese5160/a12g-firmware-drivers-t05-product-scanner)
-- **Final PCBA on Altium 365:** [Altium 365 Link](https://upenn-eselabs.365.altium.com/designs/CA7AC7AB-A449-4488-9C62-C8DDCABF01EC)
+## 5. Conclusion
+Reflecting on the development process of our sound detection and tracking system, several aspects could have been approached differently to enhance efficiency and performance:
+
+1.Microphone Selection and Calibration Process: To address the challenge of inaccurate microphones, we could have prioritized the selection of high-quality directional microphones or microphone arrays from the outset. Additionally, incorporating an automated or algorithm-driven calibration process would have significantly reduced the time and effort required for manual adjustments, improving the system’s adaptability to different environments.
+
+2.Conflict Resolution between UART and Timer1: The conflict between UART and Timer1 could have been mitigated earlier in the design phase by adopting advanced resource-sharing techniques or exploring alternative communication protocols like SPI. This would have minimized integration issues and streamlined the motor rotation control. Leveraging simulation tools to identify and address hardware conflicts during the initial development stages might have saved debugging time later on.
+
+
+##  Project Codebase Links
+github:https://github.com/upenn-embedded/final-project-v50
