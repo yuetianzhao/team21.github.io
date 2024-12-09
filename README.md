@@ -25,13 +25,11 @@
 ## 2. Project Summary and images
 <div align="center">
 <table><tr>
-<td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Userpage.png" width="1000"/></td>
-<td><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/Qrcode%20scanner.png" width="1000"/></td>
+<td><img src="https://github.com/yuetianzhao/team21.github.io/blob/main/img1.jpg" width="1000"/></td>
 </tr><tr>
-<td colspan="2"><img src="https://github.com/ese5160/a14g-final-submission-t05-product-scanner/blob/main/Screenshoot%20and%20photo/OTAFU.jpg" width="1000"/></td>
 </tr></table>
 </div>
-*Description: Screenshot of the Node-RED backend, illustrating the flow and logic used to process data.*
+*Description: System overview.*
 ### Device Description
 Our device aims to create a sound detect system, allowing users to speak and the RC SERVO motor will rotate to follow the source of the sound. Users can use LCD to check the different component of the frequency. Moreover, LEDs can also be a way to show the source of the sound(left, front, right).
 
