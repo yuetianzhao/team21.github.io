@@ -17,7 +17,6 @@
 ## 1. Video Presentation
 <div align="center">
   <a href="https://drive.google.com/file/d/1EQbMuIp2Q4er1tXsdoMXXYFDCgoy8Ak6/view?usp=sharing">
-    <img src="https://drive.google.com/file/d/1EQbMuIp2Q4er1tXsdoMXXYFDCgoy8Ak6/view?usp=sharing" width="500">
   </a>
 </div>
 
