@@ -16,7 +16,7 @@
 
 ## 1. Video Presentation
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=oSgTU4lZSk4">
+  <a href="https://drive.google.com/file/d/1EQbMuIp2Q4er1tXsdoMXXYFDCgoy8Ak6/view?usp=sharing">
     <img src="https://img.youtube.com/vi/oSgTU4lZSk4/0.jpg" alt="Video Thumbnail" width="500">
   </a>
 </div>
