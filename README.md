@@ -29,7 +29,7 @@
 </tr><tr>
 </tr></table>
 </div>
-*Description: System overview.*
+
 ### Device Description
 Our device aims to create a sound detect system, allowing users to speak and the RC SERVO motor will rotate to follow the source of the sound. Users can use LCD to check the different component of the frequency. Moreover, LEDs can also be a way to show the source of the sound(left, front, right).
 
