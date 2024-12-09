@@ -3,7 +3,7 @@
 
     * Team Number: 21
     * Team Name: V50
-    * Team Members: Gengzhi Zhu & Yuetian Zhao & Ruilong Liu
+    * Team Members: Gengzhi Zhu & Yuetian Zhao & Jinrong Liu
     * Github Repository URL: https://github.com/upenn-embedded/final-project-v50
     * Github Pages URL: https://yuetianzhao.github.io/team21.github.io/
     * Description of test hardware: 
