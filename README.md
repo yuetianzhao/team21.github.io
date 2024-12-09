@@ -26,8 +26,8 @@
 <div align="center">
 <table><tr>
 <td><img src="https://github.com/yuetianzhao/team21.github.io/blob/main/img1.jpg" width="1000"/></td>
-   <td><img src="https://github.com/yuetianzhao/team21.github.io/blob/main/img1.jpg" width="1000"/></td>
-   <td><img src="https://github.com/yuetianzhao/team21.github.io/blob/main/img1.jpg" width="1000"/></td>
+   <td><img src="https://github.com/yuetianzhao/team21.github.io/blob/main/img2.jpg" width="1000"/></td>
+   <td><img src="https://github.com/yuetianzhao/team21.github.io/blob/main/img3.jpg" width="1000"/></td>
 </tr><tr>
 </tr></table>
 </div>
