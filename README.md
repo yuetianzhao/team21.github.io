@@ -1,10 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/kzkUPShx)
 # a14g-final-submission
 
-    * Team Number: 5
-    * Team Name: Pruduct Scanner
-    * Team Members: Tianshu Wang & Jin Qian
-    * Github Repository URL: https://github.com/ese5160/a14g-final-submission-t05-product-scanner
+    * Team Number: 21
+    * Team Name: V50
+    * Team Members: Gengzhi Zhu & Yuetian Zhao & Ruilong Liu
+    * Github Repository URL: https://github.com/upenn-embedded/final-project-v50
     * Github Pages URL: https://ese5160.github.io/a14g-final-submission-t05-product-scanner/
     * Description of test hardware: 
          SAMW25 Microcontroller
