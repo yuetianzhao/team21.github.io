@@ -25,9 +25,9 @@
 ## 2. Project Summary and images
 <div align="center">
 <table><tr>
-   <td><img src="./img/img1.jpg" width="1000"/></td>
-   <td><img src="./img/img2.jpg" width="1000"/></td>
-   <td><img src="./img/img3.jpg" width="1000"/></td>
+   <td><img src="./img1.jpg" width="1000"/></td>
+   <td><img src="./img2.jpg" width="1000"/></td>
+   <td><img src="./img3.jpg" width="1000"/></td>
 </tr><tr>
 </tr></table>
 </div>
