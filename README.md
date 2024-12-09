@@ -17,7 +17,7 @@
 ## 1. Video Presentation
 <div align="center">
   <a href="https://drive.google.com/file/d/1EQbMuIp2Q4er1tXsdoMXXYFDCgoy8Ak6/view?usp=sharing">
-     <img src="https://github.com/yuetianzhao/team21.github.io/blob/main/235ca63143c26eed49d467f0db3566a5.jpg" width="500">
+     <img src="../235ca63143c26eed49d467f0db3566a5.jpg" width="500">
   </a>
 </div>
 
