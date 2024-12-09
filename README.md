@@ -5,14 +5,14 @@
     * Team Name: V50
     * Team Members: Gengzhi Zhu & Yuetian Zhao & Ruilong Liu
     * Github Repository URL: https://github.com/upenn-embedded/final-project-v50
-    * Github Pages URL: https://ese5160.github.io/a14g-final-submission-t05-product-scanner/
+    * Github Pages URL: https://yuetianzhao.github.io/team21.github.io/
     * Description of test hardware: 
-         SAMW25 Microcontroller
-         SHTC3-TR-10KS Sensor
+         STM32 Microcontroller
+         ATMEGA328PB Microcontroller
+         MAX4466 Microphone Sensor
          1.8" Color TFT LCD with SPI Interface
-         Tiny Code Reader from Useful Sensors
-         ADA1201 Vibrating Motor
-         3.7V Li-Ion Battery
+         3 LEDs
+         RC Servo motor
 
 ## 1. Video Presentation
 <div align="center">
