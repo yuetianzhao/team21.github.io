@@ -33,8 +33,8 @@
 </div>
 <div align="center">
 <table><tr>
-   <td><img src="./img4.jpg" width="1000"/></td>
-   <td><img src="./img5.jpg" width="1000"/></td>
+   <td><img src="./img4.png" width="1000"/></td>
+   <td><img src="./img5.png" width="1000"/></td>
 </tr><tr>
 </tr></table>
 </div>
