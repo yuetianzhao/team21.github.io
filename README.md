@@ -502,11 +502,11 @@ This project aims to create a system that effectively tracks sound sources using
 
 ### 4. System Block Diagram
 
-![alt text](img1.png)
+![alt text](https://github.com/Jinrong-Liu-10/team21.github.io/blob/main/images/img1.png)
 
 ### 5. Design Sketches
 
-![alt text](img2.png)
+![alt text](https://github.com/Jinrong-Liu-10/team21.github.io/blob/main/images/img2.png)
 
 ### 6. Software Requirements Specification (SRS)
 ### 6.1 Overview
@@ -560,14 +560,14 @@ motor shall support IIC or CAN communication
 The ADCs should set in continuous mode, and let the A/D transition less than 50us per data and then transmit to array by DMA, by doing this, it can have enough 256 bytes data for FFT and also to improve accuracy.   
 
   
-![image4](image4.jpg)
+![image4](https://github.com/Jinrong-Liu-10/team21.github.io/blob/main/images/image4.jpg)
 
 #### SRS 02 - Display Management
 We manage a 1.8" Color TFT LCD screen with an SPI interface, capable of displaying sound details. Current performance shows 5 different frequency component of the sound and show the position of the sound, the data to SPI is 9600 BPS.
 We manage a 1.8" Color TFT LCD screen with an SPI interface, capable of displaying sound details. Current performance shows 3 different range of frequency component of the sound and show the position of the sound, the data to SPI is 9600 BPS.  
 
   
-![image5](image5.jpg)
+![image5](https://github.com/Jinrong-Liu-10/team21.github.io/blob/main/images/image5.jpg)
 
 #### SRS 03 - UART and GPIO data transmition
 Our system need to transmit data from STM32 to ATMEGA328PB, we use two communication approach, UART with 9600 baud rate and GPIO that will set high for 60ms when detect the postion sound information(left, front, right).
@@ -576,7 +576,7 @@ The following figure shows the test to detect if the stm32 successfully transfer
 
 
   
-![image6](image6.jpg)
+![image6](https://github.com/Jinrong-Liu-10/team21.github.io/blob/main/images/image6.jpg)
 
 ### 9. Components
 
