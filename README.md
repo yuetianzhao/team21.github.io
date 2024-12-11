@@ -114,7 +114,6 @@ To address these challenges, we created a single common grounding point, added a
 Despite these measures, the system still required a specific power-up sequence to establish stable communication: we needed to power up the STM32 first and wait for it to stabilise, then power up the two ATmega's in turn and ensure that all ground connections were reliable.
 
 
-Translated with DeepL.com (free version)
 
 ##  Project Codebase Links
 github:https://github.com/upenn-embedded/final-project-v50
