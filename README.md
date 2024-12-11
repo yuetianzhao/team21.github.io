@@ -4,7 +4,7 @@
     * Team Name: 21
     * Team Members: V50
     * Github Repository URL: Gengzhi Zhu & Yuetian Zhao & Jinrong Liu
-    * Github Pages Website URL: [for final submission]: https://github.com/Jinrong-Liu-10/team21.github.io 
+    * Github Pages Website URL: https://github.com/Jinrong-Liu-10/team21.github.io 
     https://yuetianzhao.github.io/team21.github.io/
     * Description of hardware: (embedded hardware, laptop, etc) :
      STM32 Microcontroller
